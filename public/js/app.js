@@ -4,7 +4,6 @@ var app = new Vue({
   el: '#main',
   delimiters: ['<%', '%>'],
   data: {
-    message: 'Hello Vue!',
     url: 'http://127.0.0.1:8000/api/',
     news: [],
     data: {
@@ -44,7 +43,7 @@ var app = new Vue({
         'Content-Type': 'multipart/form-data, boundary=—-WebKitFormBoundaryfgtsKTYLsT7PNUVD'
       })
       .then(data => {
-        alert('Salvo com sucesso!')
+        alert('Salvo com sucesso!\n Recarregue o App e veja sua notícia postada!')
         this.clearFields()
       })
       .catch($e => {

@@ -1,7 +1,7 @@
 @extends('main')
 @section('content')
 <div class="container">
-  <h1>Crie uma notícia</h1>
+  <h1>Postar uma notícia</h1>
   <div class="form-group">
     <form v-on:submit.prevent="submit" method="post">
       <div class="row m-2">
